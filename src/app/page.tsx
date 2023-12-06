@@ -58,14 +58,16 @@ export default function Home() {
           </div>
         </aside>
         <main className="flex-1 p-6">
-          <div className="flex items-center gap-3">
-            <button className="h-6 w-6 rounded-full bg-black/20">
+          <div className="flex items-center gap-4">
+            <button className="rounded-full bg-black/40 p-1">
               <ChevronLeft />
             </button>
-            <button className="h-6 w-6 rounded-full bg-black/20">
+            <button className="rounded-full bg-black/40 p-1">
               <ChevronRight />
             </button>
           </div>
+
+          <h1 className="text-semibold mt-10 text-4xl">Good Afternoon</h1>
         </main>
       </div>
       <footer className="border-t border-zinc-700 bg-zinc-800 p-6">
