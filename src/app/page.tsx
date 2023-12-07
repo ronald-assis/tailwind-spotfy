@@ -165,8 +165,21 @@ export default function Home() {
           </div>
         </main>
       </div>
-      <footer className="border-t border-zinc-700 bg-zinc-800 p-6">
-        footer
+      <footer className="flex items-center justify-between border-t border-zinc-700 bg-zinc-800 p-6">
+        <div className="flex items-center gap-3">
+          <Image
+            src="/assets/album.jpeg"
+            width={86}
+            height={86}
+            alt="Victin album cover"
+          />
+          <div className="flex flex-col">
+            <strong className="font-normal ">Victin</strong>
+            <span className="text-xsj text-zinc-400">Ninguém me Entende</span>
+          </div>
+        </div>
+        <div></div>
+        <div></div>
       </footer>
     </div>
   )
