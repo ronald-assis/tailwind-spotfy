@@ -9,6 +9,11 @@ import {
   SkipBack,
   SkipForward,
   Repeat,
+  Mic2,
+  LayoutList,
+  Laptop2,
+  Volume,
+  Maximize2,
 } from 'lucide-react'
 import Image from 'next/image'
 
@@ -169,7 +174,7 @@ export default function Home() {
           </div>
         </main>
       </div>
-      <footer className="flex items-center justify-between border-t border-zinc-700 bg-zinc-800 p-6">
+      <footer className="flex items-center justify-between border-t border-zinc-700 bg-zinc-800 px-6 py-4">
         <div className="flex items-center gap-3">
           <Image
             src="/assets/album.jpeg"
@@ -196,10 +201,24 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-2">
             <span className="text-xs text-zinc-400">0:32</span>
+            <div className="h-1 w-96 rounded-full bg-zinc-600">
+              <div className="h-1 w-40 rounded-full bg-zinc-200"></div>
+            </div>
             <span className="text-xs text-zinc-400">2:14</span>
           </div>
         </div>
-        <div></div>
+        <div className="flex items-center gap-2">
+          <Mic2 size={20} />
+          <LayoutList size={20} />
+          <Laptop2 size={20} />
+          <div className="flex items-center gap-2">
+            <Volume size={20} />
+            <div className="h-1 w-24 rounded-full bg-zinc-600">
+              <div className="h-1 w-10 rounded-full bg-zinc-200"></div>
+            </div>
+          </div>
+          <Maximize2 size={20} />
+        </div>
       </footer>
     </div>
   )
